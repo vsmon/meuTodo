@@ -19,7 +19,7 @@ export default class Home extends Component{
             listTarefas:[],
         }
         this.listTarefas = this.listTarefas.bind(this);
-        //this.listTarefas();
+
     }
     componentWillUnmount(){
         Sistema
