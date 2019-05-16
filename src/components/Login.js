@@ -12,8 +12,8 @@ export default class Login extends Component {
     constructor(props){
         super(props);
         this.state = {
-            textUsuario:'rodrigo@gmail.com',
-            textSenha:'123456',
+            textUsuario:'',
+            textSenha:'',
         }
         Sistema.LogOut();
         this.logar = this.logar.bind(this);
@@ -40,14 +40,12 @@ export default class Login extends Component {
                     style={styles.input}
                     placeholder='Digite o usuário...'
                     onChangeText={(txtUsuario)=>this.setState({textUsuario:txtUsuario})}
-                    //value='rodrigo@gmail.com'
                 />
                 <Text>Senha:{this.state.textSenha}</Text>
                 <TextInput
                     style={styles.input}
                     placeholder='Digite a senha...'
                     onChangeText={(txtSenha)=>this.setState({textSenha:txtSenha})}
-                    //value='123456'
                 />
                 <TouchableOpacity
                     style={styles.touchable}
