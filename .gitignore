@@ -56,4 +56,4 @@ buck-out/
 *.jsbundle
 
 #Minhas
-src/FirebaseConnection.js
+src/components/FirebaseConnection.js
